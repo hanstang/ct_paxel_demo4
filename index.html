@@ -84,22 +84,22 @@ if (!window.CleverTapWebView)
         document.getElementById("agent").innerText = Agent
         var currentID = document.getElementById("currentID");
         if(window.CleverTapWebView){
-            CleverTapWebView.pushEvent("WebView Main Activity Open App");
+            CleverTapWebView.pushEvent("WebView Main Activity Open App Paxel 4");
             currentID.textContent += "ID is from APP";
 
             document.getElementById("login_form").innerHTML = "";
         }
         else{
-            clevertap.event.push("WebView Main Activity Open Web");
+            clevertap.event.push("WebView Main Activity Open Web Paxel 4");
             currentID.textContent += clevertap.getCleverTapID();
         }
     }
     function SendEventFunction() {
         if(window.CleverTapWebView){
-            CleverTapWebView.pushEvent("event From Webview");
+            CleverTapWebView.pushEvent("Event From Webview Paxel 4");
         }
         else{
-            clevertap.event.push("event From Web");
+            clevertap.event.push("Event From Web Paxel 4");
         }
     }
 
